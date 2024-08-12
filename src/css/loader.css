@@ -1,0 +1,36 @@
+.loader {
+    position: relative;
+    display: none;
+    justify-content: center;
+  }
+  
+  .loader:before , .loader:after {
+      content: '';
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      position: absolute;
+      top: 300px;
+      transform: translate(-50%, -50%);
+      margin: 0  5px  ;
+      border-radius: 50%;
+      color: #6b4d4dc3;
+      background: currentColor;
+      box-shadow: 50px 0 ,  -50px 0;
+      animation: left 1.9s infinite ease-in;
+    }
+    .loader:after {
+      color: #d5586f93;
+      animation: right 1.9s infinite ease-out;
+    }
+  
+  
+  @keyframes right {
+    0% , 100%{transform: translateY(-10px) }
+    50% { transform: translateY(10px) }
+  }
+  
+  @keyframes left {
+    0% , 100%{ transform: translateY(10px) }
+    50% { transform: translateY(-10px) }
+  }
