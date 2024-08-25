@@ -90,6 +90,7 @@ const handleLoadMore = async () => {
     );
   } finally {
     loader.style.display = 'none'; 
+    form.reset();
   }
 };
 
