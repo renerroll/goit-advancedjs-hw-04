@@ -52,7 +52,7 @@ const handleSubmitForm = async event => {
       'Damn! An error occurred while fetching images. Please try again later.'
     );
   } finally {
-    loader.style.display = 'Woops! An error occurred while fetching images. Please try again later.';
+    loader.style.display = 'none'; 
     form.reset();
   }
 };
@@ -89,7 +89,7 @@ const handleLoadMore = async () => {
       'Damn! An error occurred while fetching images. Please try again later.'
     );
   } finally {
-    loader.style.display = 'Woops! An error occurred while fetching images. Please try again later.';
+    loader.style.display = 'none'; 
   }
 };
 
