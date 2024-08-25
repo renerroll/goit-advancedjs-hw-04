@@ -30,7 +30,6 @@ export const renderImages = async (images, reset = false) => {
   const imagePromises = images.map(image => loadImage(image.webformatURL));
   await Promise.all(imagePromises);
 
-  // Створюємо фрагмент документа для оптимальної вставки
   const fragment = document.createDocumentFragment();
 
   images.forEach(image => {
